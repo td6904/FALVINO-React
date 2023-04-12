@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../images/FalvinoLogo.png";
+import "../index.css"
 
 export default function Navbar() {
   return (

@@ -2,6 +2,27 @@
 
 I want to start coding the FALVINO site in react. Will use this as a guide.
 
+### Routing
+
+// Import the necessary libraries and components
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './components/Home';
+import Contact from './components/Contact';
+
+function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/contact" component={Contact} />
+      </Switch>
+    </Router>
+  );
+}
+
+export default App;
+
 ### Help from ChatGPT
 If you want to build a website for your band from scratch using a programming language, here are some steps to follow:
 
