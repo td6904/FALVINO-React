@@ -1,5 +1,7 @@
 # Notes
 
+Next step, routing!
+
 I want to start coding the FALVINO site in react. Will use this as a guide.
 
 ### Routing

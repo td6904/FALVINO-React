@@ -105,7 +105,7 @@ export default function Mainpage() {
         </div>
       </div>
       <div className="socials">
-        <a href="https://www.youtube.com/@falvino9343" ><img src={youtube} alt="youtube" /></a>
+        <a href="https://m.youtube.com/channel/UClzCn16tT9TDQ2tE3yG1ITQ" ><img src={youtube} alt="youtube" /></a>
         <a href="https://www.facebook.com/profile.php?id=100086291594451" ><img src={facebook} alt="facebook" /></a>
         <a href="https://www.instagram.com/falvinofalvino/" ><img src={insta} alt="insta" /></a>
         
