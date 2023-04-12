@@ -189,6 +189,46 @@ body.is-active
   margin-top: 5px;
 }
 
+.discog {
+  color: var(--text-color);
+  margin-left: 30px;
+  text-align: left;
+}
+
+.discog img {
+  width: 315px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 55px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.email-input {
+  background-color: var(--main-background);
+  text-align: center;
+  color: white;
+  border: var(--text-color) solid 4px;
+  height: 57px;
+  width: 83%;
+}
+
+.email-input::placeholder {
+  color: var(--text-color);
+}
+
+.button-input {
+  background-color: var(--secondary-color);
+  text-align: center;
+  color: white;
+  border: var(--text-color) solid 4px;
+  height: 67px;
+  width: 87.5%;
+}
+
 .footer {
 height: 63px;
 width: 100%;
