@@ -1,13 +1,160 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-photo {
+  width: 100%;
 }
+
+:root {
+  --main-color: #9BBCB0;
+  --main-background: black;
+  --secondary-color: #C3BBAD;
+  --text-color: white;
+  --menu-text: 30pt;
+  --title-text: 30pt;
+  --home-button: 75pt;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-background);
+}
+
+body.is-active
+{
+  overflow: hidden;
+}
+
+/*Nav bar*/
+
+.mainBar {
+  width: 100%;
+  height: 63px;
+  margin: 0;
+  padding: 0;
+  background: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainLogo {
+  height: 50%;
+  padding: 15px;
+  margin: 0;
+}
+
+/*////// Burger Button and actions //////*/
+
+.hamburger {
+  position: relative;
+  display: block;
+  width: 70px;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+  margin-right: 10px;
+  margin-top: -12px;
+}
+
+.burger-button li {
+  list-style: none;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: var(--text-color);
+  margin: 10px 0px;
+  transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+  transform: translate(0px, 13px) rotate(-45deg);
+}
+
+.hamburger.is-active:after {
+  transform: translate(0px, -16px) rotate(45deg);
+}
+
+.hamburger.is-active .bar {
+  opacity: 0;
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: 53px;
+  height: 100%;
+  right: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 98;
+  margin-top: 10px;
+  transition: 0.4s;
+  background-color: var(--main-color);
+  color: var(--text-color);
+}
+
+.mobile-nav ul {
+  list-style: none;
+  text-align: center;
+  font-size: var(--menu-text);
+}
+
+.mobile-nav li {
+  margin-top: 15px;
+  position: relative;
+  bottom: 50px;
+}
+
+
+.mobile-nav a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.mobile-nav a:hover {
+  color: var(--secondary-color);
+  transition: 0.5s;
+  
+}
+
+.mobile-nav.is-active {
+  right: 0;
+  overflow-y: hidden;
+}
+
+
+/*Main page*/
+
+.welcomePhoto {
+  width: 100%;
+}
+
+.news {
+  color: var(--text-color);
+  margin-left: 30px;
+}
+
+.footer {
+height: 63px;
+width: 100%;
+background-color: var(--main-color);
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+}
+
+.footer-text {
+margin: auto 100px;
+}
+
