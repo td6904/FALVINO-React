@@ -178,7 +178,7 @@ body.is-active
 }
 
 .date-cards {
-  width: 313px;
+  width: 90.5%;
   height: 126px;
   background-color: var(--secondary-color);
   color: var(--main-background);
@@ -196,7 +196,7 @@ body.is-active
 }
 
 .discog img {
-  width: 315px;
+  width: 91%;
 }
 
 .form {
@@ -229,6 +229,10 @@ body.is-active
   width: 87.5%;
 }
 
+.socials img {
+  padding: 0 10px;
+}
+
 .footer {
 height: 63px;
 width: 100%;
@@ -239,6 +243,6 @@ align-items: center;
 }
 
 .footer-text {
-margin: auto 100px;
+margin: auto 30px;
 }
 

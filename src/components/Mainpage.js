@@ -1,6 +1,9 @@
 import React from "react";
 import Group from "../images/group.jpg";
 import grinta from "../images/grinta.png";
+import youtube from "../images/youtube.png";
+import facebook from "../images/facebook.png";
+import insta from "../images/insta.png";
 
 export default function Mainpage() {
   return (
@@ -101,6 +104,17 @@ export default function Mainpage() {
           <br />
         </div>
       </div>
+      <div className="socials">
+        <a href="https://www.youtube.com/@falvino9343" ><img src={youtube} alt="youtube" /></a>
+        <a href="https://www.facebook.com/profile.php?id=100086291594451" ><img src={facebook} alt="facebook" /></a>
+        <a href="https://www.instagram.com/falvinofalvino/" ><img src={insta} alt="insta" /></a>
+        
+      </div>
+      <br />
+      <br />
+      <div class="footer">
+        <p class="footer-text">© Tyler dev</p>
+        </div>
     </div>
   );
 }
