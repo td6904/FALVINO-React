@@ -5,22 +5,22 @@ export default function Navbar() {
   return (
     <div>
       <nav>
-        <div class="mainBar">
+        <div className="mainBar">
           <a href="/">
-            <img class="main-logo" src={Logo} alt="Falv logo" />
+            <img className="main-logo" src={Logo} alt="Falv logo" />
           </a>
-          <ul class="burger-button">
+          <ul className="burger-button">
             <li>
-              <button class="hamburger">
-                <div class="bar"></div>
+              <button className="hamburger">
+                <div className="bar"></div>
               </button>
             </li>
           </ul>
         </div>
       </nav>
 
-      <div class="mobile-nav">
-        <ul>
+      <div className="mobile-nav">
+        {/* <ul>
           <li>
             <u>Menu</u>
           </li>
@@ -45,7 +45,7 @@ export default function Navbar() {
           <li>
             <a href="">A la une</a>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </div>
   );
