@@ -1,65 +1,80 @@
-# Notes
+# FALVINO-React
 
-Next step, routing!
+# Usage
 
-I want to start coding the FALVINO site in react. Will use this as a guide.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Routing
+# Getting Started with Create React App
 
-// Import the necessary libraries and components
-import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './components/Home';
-import Contact from './components/Contact';
+## Available Scripts
 
-function App() {
-  return (
-    <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/contact" component={Contact} />
-      </Switch>
-    </Router>
-  );
-}
+In the project directory, you can run:
 
-export default App;
+### `npm start`
 
-### Help from ChatGPT
-If you want to build a website for your band from scratch using a programming language, here are some steps to follow:
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-1. Choose a programming language and framework: Some popular choices include JavaScript, PHP, Ruby on Rails, and Django (Python). Consider your familiarity with the language and framework, as well as their suitability for building a website.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-2. Plan your website: Determine the website's purpose, the features you want to include, and the information you want to provide to your audience.
+### `npm test`
 
-3. Design your website: Create a mockup of your website's layout and design. Use a tool like Adobe XD or Sketch to create a design prototype.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-4. Develop your website: Write your website's code using your chosen programming language and framework. Consider using a web development framework like React, Angular, or Vue.js to make the development process faster and more efficient.
+### `npm run build`
 
-5. Add security features: Make sure to add security features such as SSL certificates, password protection, and firewalls to ensure your website is secure.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-6. Test your website: Test your website for functionality, usability, and performance. Consider using testing frameworks like Jest, Mocha, or Selenium to automate your tests.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-7. Deploy your website: Deploy your website to a hosting provider like AWS, Google Cloud, or Heroku.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Building a website from scratch requires a higher level of technical expertise and can take longer to develop than using a website builder platform. However, it gives you complete control over the design, features, and functionality of your website.
+### `npm run eject`
 
-### and converting it to React thereafter:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Converting a static HTML page to a React app involves several steps, and the ease of the process depends on the complexity of the HTML page and your familiarity with React.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Here are the general steps to follow when converting a static HTML page to a React app:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-1. Set up the React environment: Install Node.js and create a new React project using a tool like Create React App.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-2. Convert the HTML markup: Copy the HTML markup from the static page into the React app's index.html file.
+## Learn More
 
-3. Split the HTML into components: Split the HTML into smaller components and convert them into React components. This involves breaking down the HTML code into reusable components, such as the header, navigation bar, footer, and main content area.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-4. Refactor the CSS styles: Refactor the CSS styles into React components using CSS-in-JS libraries like Styled Components, Emotion, or CSS Modules.
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-5. Convert the JavaScript logic: Convert any JavaScript code in the HTML file into React components and use React state and props to manage the component's data and behavior.
+### Code Splitting
 
-6. Test the React app: Test the React app to ensure it behaves as expected and fix any errors or bugs.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-The ease of converting a static HTML page to a React app depends on your familiarity with React and the complexity of the HTML page. If the HTML page is simple and does not have many interactive components, the process of converting it to React may be relatively straightforward. However, if the HTML page is complex and has many interactive components, the conversion process may be more challenging and time-consuming.
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+----
+
+## About
+
+Building a website for my band using React.
