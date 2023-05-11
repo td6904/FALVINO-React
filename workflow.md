@@ -63,3 +63,49 @@ Here are the general steps to follow when converting a static HTML page to a Rea
 6. Test the React app: Test the React app to ensure it behaves as expected and fix any errors or bugs.
 
 The ease of converting a static HTML page to a React app depends on your familiarity with React and the complexity of the HTML page. If the HTML page is simple and does not have many interactive components, the process of converting it to React may be relatively straightforward. However, if the HTML page is complex and has many interactive components, the conversion process may be more challenging and time-consuming.
+
+# Facebook API setup
+
+To show Facebook event info on your band's React webpage, you can use the Facebook Graph API to retrieve the event data and display it on your website. Here are the general steps to follow:
+
+Create a Facebook app: First, you need to create a Facebook app and obtain an access token to make API calls. To create an app, go to the Facebook Developers website and follow the instructions to create a new app.
+
+Get event data: Once you have obtained an access token, you can use the Facebook Graph API to retrieve event data. To get event data, you can make a GET request to the following endpoint: /page_id/events. Replace page_id with your band's Facebook Page ID. You can get the Page ID by visiting your band's Facebook Page and checking the URL.
+
+Display the event data: Once you have retrieved the event data, you can display it on your React webpage. You can use any React component or library to display the data in a visually appealing way. For example, you could create a custom component that displays the event date, time, location, and description.
+
+Here is some sample code to get you started:
+
+javascript
+Copy code
+import React, { useState, useEffect } from 'react';
+
+function EventList({ pageId }) {
+  const [events, setEvents] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const response = await fetch(`https://graph.facebook.com/${pageId}/events?access_token=${process.env.FB_ACCESS_TOKEN}`);
+      const data = await response.json();
+      setEvents(data.data);
+    };
+    fetchData();
+  }, [pageId]);
+
+  return (
+    <div>
+      <h2>Upcoming Events:</h2>
+      {events.map((event) => (
+        <div key={event.id}>
+          <h3>{event.name}</h3>
+          <p>{event.description}</p>
+          <p>{event.start_time}</p>
+          <p>{event.place.name}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default EventList;
+In this example, the EventList component retrieves the event data from the Facebook Graph API and displays it in a list format. The useEffect hook is used to fetch the data when the component mounts, and the useState hook is used to store the events array. You can customize this code to fit your specific use case and design.
