@@ -109,3 +109,7 @@ function EventList({ pageId }) {
 
 export default EventList;
 In this example, the EventList component retrieves the event data from the Facebook Graph API and displays it in a list format. The useEffect hook is used to fetch the data when the component mounts, and the useState hook is used to store the events array. You can customize this code to fit your specific use case and design.
+
+
+
+IF IT DOESN'T WORK - THERE IS A FACEBOOK APP PLUGIN THAT I CAN INTEGRATE INTO PAGE.
