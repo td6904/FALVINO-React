@@ -12,6 +12,13 @@ function EventList({ pageId }) {
     fetchData();
 }, [pageId]);
 
-
+return (
+    <div>
+        <h2>Upcoming Events</h2>
+        {events.map((event) => (
+            <h3></h3>
+        ))}
+    </div>
+)
 
 }
