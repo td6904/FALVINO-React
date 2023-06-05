@@ -22,34 +22,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <div className="mobile-nav">
-        {/* <ul>
-          <li>
-            <u>Menu</u>
-          </li>
-          <li>
-            <a href="/group">Le Groupe</a>
-          </li>
-          <li>
-            <a href="">Prochaines Concerts</a>
-          </li>
-          <li>
-            <a href="">Photos</a>
-          </li>
-          <li>
-            <a href="">Videos</a>
-          </li>
-          <li>
-            <a href="">Discographie</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
-          </li>
-          <li>
-            <a href="">A la une</a>
-          </li>
-        </ul> */}
-      </div>
+      
     </div>
   );
 }

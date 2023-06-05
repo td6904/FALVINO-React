@@ -118,41 +118,50 @@ body.is-active
 
 /* //////////////////////////////////////////////// */
 
-.mobile-nav {
+.mobile-nav.is-active {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  top: 53px;
-  height: 100%;
-  right: 100%;
-  width: 100%;
-  position: absolute;
+  top: 70px;
+  
   z-index: 98;
-  margin-top: 10px;
+  margin-top: 40px;
   transition: 0.4s;
+  
+}
+
+.menu {
+  background-color: var(--main-color);
+  position: relative;
+  top: 40px;
+  height: 100%;
+  right: 50%;
+  width: 100%;
   background-color: var(--main-color);
   color: var(--text-color);
 }
 
-.mobile-nav ul {
+.menu ul {
   list-style: none;
   text-align: center;
   font-size: var(--menu-text);
 }
 
-.mobile-nav li {
+.menu li {
   margin-top: 15px;
   position: relative;
   bottom: 50px;
+  
 }
 
 
-.mobile-nav a {
+.menu a {
   color: var(--text-color);
   text-decoration: none;
+  
 }
 
-.mobile-nav a:hover {
+.menu a:hover {
   color: var(--secondary-color);
   transition: 0.5s;
   
@@ -174,7 +183,7 @@ body.is-active
   .mainBar {
     height: 40px;
   }
-
+/* 
   .hamburger {
     width: 55px;
     margin-right: 5px;
@@ -185,8 +194,8 @@ body.is-active
 .hamburger:before {
     margin: 6.5px 0;
     height: 3px;
-  }
-}
+  }*/
+} 
 
 /*Main page*/
 
