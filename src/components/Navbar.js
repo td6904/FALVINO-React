@@ -12,13 +12,13 @@ export default function Navbar() {
             <img className="main-logo" src={Logo} alt="Falv logo" />
           </a>
           <BurgerButton />
-          <ul className="burger-button">
+          {/* <ul className="burger-button">
             <li>
               <button className="hamburger">
                 <div className="bar"></div>
               </button>
             </li>
-          </ul>
+          </ul> */}
         </div>
       </nav>
 
