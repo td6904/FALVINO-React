@@ -26,22 +26,22 @@ const BurgerButton = () => {
                 <Link to="/group">Le Groupe</Link>
               </li>
               <li>
-                <a href="">Prochaines Concerts</a>
+                <Link to="">Prochaines Concerts</Link>
               </li>
               <li>
-                <a href="">Photos</a>
+                <Link to="">Photos</Link>
               </li>
               <li>
-                <a href="">Videos</a>
+                <Link to="">Videos</Link>
               </li>
               <li>
-                <a href="">Discographie</a>
+                <Link to="">Discographie</Link>
               </li>
               <li>
-                <a href="">Contact</a>
+                <Link to="">Contact</Link>
               </li>
               <li>
-                <a href="">A la une</a>
+                <Link to="">A la une</Link>
               </li>
             </ul>
           </div>

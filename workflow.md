@@ -1,5 +1,9 @@
 # Notes
 
+Still need to separate CSS out of Index.css for Burger button, maybe Main page too.
+
+----------
+
 Next step, routing!
 
 I want to start coding the FALVINO site in react. Will use this as a guide.
