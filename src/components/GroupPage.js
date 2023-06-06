@@ -12,22 +12,22 @@ const GroupPage = () => (
       <title>Le Groupe</title>
     </Helmet>
 
-    <h1 class="pageTitle">
+    <h1 className="pageTitle">
       <u>Le Groupe</u>
     </h1>
     <div>
       <img
-        class="groupHead"
+        className="groupHead"
         src={GroupHead}
         alt="Welcome"
       />
     </div>
 
     <div>
-      <h1 class="nameTitle">
+      <h1 className="nameTitle">
         <u>Rémi Falvo</u>
       </h1>
-      <p class="description">
+      <p className="description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra
         lectus nisi. Nunc pharetra arcu turpis, at condimentum nunc ullamcorper
         ut. Nunc est eros, vehicula vitae purus sed, scelerisque rutrum leo. Sed
@@ -52,17 +52,17 @@ const GroupPage = () => (
         ante ornare sollicitudin a congue risus.
       </p>
       <img
-        class="profile"
+        className="profile"
         src={remi}
         alt="Remi"
       />
     </div>
-    <div class="line"></div>
+    <div className="line"></div>
     <div>
-      <h1 class="nameTitle">
+      <h1 className="nameTitle">
         <u>Tyler Durnion</u>
       </h1>
-      <p class="description">
+      <p className="description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra
         lectus nisi. Nunc pharetra arcu turpis, at condimentum nunc ullamcorper
         ut. Nunc est eros, vehicula vitae purus sed, scelerisque rutrum leo. Sed
@@ -87,17 +87,17 @@ const GroupPage = () => (
         ante ornare sollicitudin a congue risus.
       </p>
       <img
-        class="profile"
+        className="profile"
         src={tyler}
         alt="Tyler"
       />
     </div>
-    <div class="line"></div>
+    <div className="line"></div>
     <div>
-      <h1 class="nameTitle">
+      <h1 className="nameTitle">
         <u>Léo Reghem</u>
       </h1>
-      <p class="description">
+      <p className="description">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra
         lectus nisi. Nunc pharetra arcu turpis, at condimentum nunc ullamcorper
         ut. Nunc est eros, vehicula vitae purus sed, scelerisque rutrum leo. Sed
@@ -122,15 +122,15 @@ const GroupPage = () => (
         ante ornare sollicitudin a congue risus.
       </p>
       <img
-        class="profile"
+        className="profile"
         src={leo}
         alt="Leo"
       />
     </div>
-    <div class="line"></div>
+    <div className="line"></div>
 
-    <div class="home-button">
-      <a class="home-button-link" href="/">
+    <div className="home-button">
+      <a className="home-button-link" href="/">
         FALVINO
       </a>
     </div>

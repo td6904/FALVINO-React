@@ -2,6 +2,9 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Mainpage from "./components/Mainpage";
 import GroupPage from "./components/GroupPage";
+import Discography from "./components/Discography"; 
+
+import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
 
 // const router = createBrowserRouter([
@@ -22,7 +25,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Mainpage />} />
         <Route path="/group" element={<GroupPage />} />
+        <Route path="/discog" element={<Discography />} />
       </Routes>
+      <Footer />
+      
 
       {/* <RouterProvider router={router} /> */}
     </div>

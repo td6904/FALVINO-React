@@ -112,9 +112,7 @@ export default function Mainpage() {
       </div>
       <br />
       <br />
-      <div class="footer">
-        <p class="footer-text">© Tyler dev</p>
-        </div>
+      
     </>
   );
 }

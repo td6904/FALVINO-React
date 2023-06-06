@@ -35,7 +35,7 @@ const BurgerButton = () => {
                 <Link to="">Videos</Link>
               </li>
               <li>
-                <Link to="">Discographie</Link>
+                <Link to="/discog">Discographie</Link>
               </li>
               <li>
                 <Link to="">Contact</Link>
