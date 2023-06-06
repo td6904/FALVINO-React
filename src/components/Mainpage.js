@@ -7,7 +7,7 @@ import insta from "../images/insta.png";
 
 export default function Mainpage() {
   return (
-    <div>
+    <>
       <img className="main-photo" src={Group} alt="Falv logo" />
       <div className="news">
         <h1>
@@ -115,6 +115,6 @@ export default function Mainpage() {
       <div class="footer">
         <p class="footer-text">© Tyler dev</p>
         </div>
-    </div>
+    </>
   );
 }

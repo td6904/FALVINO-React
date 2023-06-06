@@ -176,6 +176,10 @@ body.is-active
   overflow-y: hidden;
 }
 
+.grouptitle {
+  color: aqua;
+}
+
 /* Mobile first */
 @media screen and (max-width: 600px) {
   .main-logo {

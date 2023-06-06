@@ -1,14 +1,18 @@
 import './App.css';
 import Navbar from "./components/Navbar"
 import Mainpage from "./components/Mainpage"
-import { Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import GroupPage from './components/GroupPage';
+
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Mainpage />
-      <Route path='/group' Component={GroupPage} />
+      <Routes>
+      <Route path='/' component={Mainpage} />
+      <Route path='/group' component={GroupPage} />
+      </Routes>
     </div>
   );
 }

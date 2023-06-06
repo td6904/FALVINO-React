@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const BurgerButton = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +23,7 @@ const BurgerButton = () => {
                 <u>Menu</u>
               </li>
               <li>
-                <a href="/group">Le Groupe</a>
+                <Link to="/group">Le Groupe</Link>
               </li>
               <li>
                 <a href="">Prochaines Concerts</a>
