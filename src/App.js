@@ -1,8 +1,9 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Mainpage from "./components/Mainpage";
+import MainPage from "./components/Mainpage";
 import GroupPage from "./components/GroupPage";
 import Discography from "./components/Discography"; 
+import ContactPage from "./components/ContactPage";
 
 import Footer from "./components/Footer";
 import { Routes, Route } from "react-router-dom";
@@ -23,9 +24,10 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Mainpage />} />
+        <Route path="/" element={<MainPage />} />
         <Route path="/group" element={<GroupPage />} />
         <Route path="/discog" element={<Discography />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />
       
