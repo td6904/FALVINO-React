@@ -117,3 +117,38 @@ In this example, the EventList component retrieves the event data from the Faceb
 
 
 IF IT DOESN'T WORK - THERE IS A FACEBOOK APP PLUGIN THAT I CAN INTEGRATE INTO PAGE.
+
+-------------------------------------------------------------
+
+# Test for API connection 
+
+## Test 1
+
+import React, { useState, useEffect } from "react";
+
+function EventList({ pageId }) {
+  const [profileName, setProfileName] = useState("");
+
+  useEffect(() => {
+    const fetchProfileData = async () => {
+      const response = await fetch(
+        `https://graph.facebook.com/${pageId}?fields=name&access_token=${process.env.REACT_APP_FB_ACCESS_TOKEN}`
+      );
+      const data = await response.json();
+      setProfileName(data.name);
+    };
+    fetchProfileData();
+  }, [pageId]);
+
+  return (
+    <div>
+      <h2>Profile Name</h2>
+      <p>{profileName}</p>
+    </div>
+  );
+}
+
+export default EventList;
+
+## Test 2
+

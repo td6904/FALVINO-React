@@ -54,11 +54,12 @@ body.is-active
   background: none;
   outline: none;
   border: none;
-  margin-right: 10px;
+  margin-right: 5px;
   margin-top: 1px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  top: 10px;
 }
 
 .burger-line {
@@ -83,7 +84,7 @@ body.is-active
 .open3 {
   transform: rotate(-45deg);
   position: relative;
-  top: -3px;
+  top: -10px;
   display: block;
 
 }
@@ -132,15 +133,20 @@ body.is-active
 }
 
 .menu {
+  display: flex;
   background-color: var(--main-color);
-  position: relative;
-  top: 100px;
+  position: absolute;
+  top: 62px;
   height: 100%;
   width: 100%;
   right: 50%;
   background-color: var(--main-color);
   color: var(--text-color);
-  transition: 0.4s;
+  transition: 0.8s;
+}
+
+.menu.open {
+  transform: translateX(-100%); /* Slide the menu to the left */
 }
 
 .menu ul {
@@ -150,6 +156,8 @@ body.is-active
   background-color: var(--main-color);
   color: var(--text-color);
   width: 100%;
+  position: relative;
+  top: 45px;
 }
 
 .menu li {
@@ -171,7 +179,7 @@ body.is-active
   
 }
 
-.mznu {
+.menu {
   right: 0;
   overflow-y: hidden;
 }
@@ -180,8 +188,19 @@ body.is-active
   color: aqua;
 }
 
+.date-cards {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.dates {
+  margin-right: 30px;
+
+}
+
 /* Mobile first */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .main-logo {
     height: 30px;
     padding: 4px;
@@ -191,12 +210,30 @@ body.is-active
   .mainBar {
     height: 40px;
   }
-/* 
+
   .hamburger {
-    width: 55px;
-    margin-right: 5px;
+    top: -2px;
+    width: 50px;
   }
 
+  .open1 {
+    top: 18px;
+  }
+
+  .open3 {
+    top: -8px;
+  
+  }
+
+  .date-cards {
+    display: block;
+  }
+
+  .menu {
+    top: 39px;
+  }
+
+  /*
   .hamburger .bar,
 .hamburger:after,
 .hamburger:before {
@@ -227,7 +264,9 @@ body.is-active
   text-align: left;
 }
 
-.date-cards {
+
+
+.date-card-item {
   width: 90.5%;
   height: 126px;
   background-color: var(--secondary-color);
@@ -239,14 +278,18 @@ body.is-active
   margin-top: 5px;
 }
 
-.discog {
+.discog h1,
+.discog h4 {
   color: var(--text-color);
-  margin-left: 30px;
   text-align: left;
+  margin-left: 30px;
 }
 
-.discog img {
-  width: 91%;
+.discog a {
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
+  
 }
 
 .form {
@@ -279,9 +322,16 @@ body.is-active
   width: 87.5%;
 }
 
-.socials img {
-  padding: 0 10px;
+.socials {
+  display: flex;  
+  justify-content: center;
 }
+
+.youtube {
+  position: relative;
+  top: 7px;
+}
+
 
 .footer {
 height: 63px;

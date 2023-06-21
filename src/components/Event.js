@@ -40,19 +40,19 @@
 
 import React, { useState, useEffect } from "react";
 
-function ProfileDetails({ userId }) {
+function ProfileDetails({ pageId }) {
   const [profileData, setProfileData] = useState(null);
 
   useEffect(() => {
     const fetchProfileData = async () => {
       const response = await fetch(
-        `https://graph.facebook.com/${userId}?fields=name,picture,cover,about,work,education,posts,friends&access_token=${process.env.REACT_APP_FB_ACCESS_TOKEN}`
+        `https://graph.facebook.com/${pageId}?fields=name,picture,cover,about,work,education,posts,friends&access_token=${process.env.REACT_APP_FB_ACCESS_TOKEN}`
       );
       const data = await response.json();
       setProfileData(data);
     };
     fetchProfileData();
-  }, [userId]);
+  }, [pageId]);
 
   if (!profileData) {
     return <div>Loading...</div>;

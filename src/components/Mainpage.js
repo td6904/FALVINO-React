@@ -5,6 +5,13 @@ import youtube from "../images/youtube.png";
 import facebook from "../images/facebook.png";
 import insta from "../images/insta.png";
 
+const menu = document.querySelector('.menu')
+const toggleButton = document.querySelector('.toggle-button')
+
+toggleButton.addEventListener('click', () => {
+  menu.classList.toggle('open')
+})
+
 export default function Mainpage() {
   return (
     <>
@@ -36,24 +43,37 @@ export default function Mainpage() {
         </h1>
         <br />
         <div className="date-cards">
-          <div className="date-text">
-            <h1>14 Janvier 2023</h1>
-            <h2>Black Lab, Lille</h2>
-            <h4>Début 21h</h4>
-            <p>
-              <u>Détails</u>
-            </p>
+        <div className="date-card-item">
+            <div className="date-text">
+              <h1>14 Janvier 2023</h1>
+              <h2>Black Lab, Lille</h2>
+              <h4>Début 21h</h4>
+              <p>
+                <u>Détails</u>
+              </p>
+            </div>
           </div>
-        </div>
-        <br />
-        <div className="date-cards">
-          <div className="date-text">
-            <h1>14 Janvier 2023</h1>
-            <h2>Black Lab, Lille</h2>
-            <h4>Début 21h</h4>
-            <p>
-              <u>Détails</u>
-            </p>
+          <br />
+          <div className="date-card-item">
+            <div className="date-text">
+              <h1>14 Janvier 2023</h1>
+              <h2>Black Lab, Lille</h2>
+              <h4>Début 21h</h4>
+              <p>
+                <u>Détails</u>
+              </p>
+            </div>
+          </div>
+          <br />
+          <div className="date-card-item">
+            <div className="date-text">
+              <h1>14 Janvier 2023</h1>
+              <h2>Black Lab, Lille</h2>
+              <h4>Début 21h</h4>
+              <p>
+                <u>Détails</u>
+              </p>
+            </div>
           </div>
         </div>
         <br />
@@ -70,7 +90,7 @@ export default function Mainpage() {
         </h1>
         <br />
         <a href="https://open.spotify.com/album/5yR04UFDGZXAMLrZ3e6aou">
-          <img src={grinta} alt="grinta" />
+          <img className="home-grinta" src={grinta} alt="grinta" />
         </a>
         <br />
         <br />
@@ -105,14 +125,18 @@ export default function Mainpage() {
         </div>
       </div>
       <div className="socials">
-        <a href="https://m.youtube.com/channel/UClzCn16tT9TDQ2tE3yG1ITQ" ><img src={youtube} alt="youtube" /></a>
-        <a href="https://www.facebook.com/profile.php?id=100086291594451" ><img src={facebook} alt="facebook" /></a>
-        <a href="https://www.instagram.com/falvinofalvino/" ><img src={insta} alt="insta" /></a>
-        
+        <a href="https://m.youtube.com/channel/UClzCn16tT9TDQ2tE3yG1ITQ">
+          <img className="youtube" src={youtube} alt="youtube" />
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=100086291594451">
+          <img src={facebook} alt="facebook" />
+        </a>
+        <a href="https://www.instagram.com/falvinofalvino/">
+          <img src={insta} alt="insta" />
+        </a>
       </div>
       <br />
       <br />
-      
     </>
   );
 }
